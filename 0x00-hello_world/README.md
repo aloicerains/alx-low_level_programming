@@ -4,4 +4,5 @@ The directory contains various C programing scripts as follows:
 1. Script compiles C file but do not link
 2. Scripts generaes assembly code with .s extension
 3. Script generate executable called cisfun
+4. First C program printing string using puts function
 
