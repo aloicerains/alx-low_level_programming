@@ -1,6 +1,11 @@
-/* Program writes message*/
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
+ */
 #include<stdio.h>
 #include<string.h>
+
 int main(void)
 {
 	char str1[60];
@@ -9,3 +14,4 @@ int main(void)
 	puts(str1);
 	return (0);
 }
+
