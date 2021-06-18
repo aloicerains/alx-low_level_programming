@@ -3,4 +3,5 @@
 1. Programs obtains the last digit of integer variable
 2. Program prints lowercase alphabets using putchar
 3. Program prints both lower and uppercase using putchar
+4. Excluding q and e in in the loop of a-z
 
