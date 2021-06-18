@@ -4,4 +4,5 @@
 2. Program prints lowercase alphabets using putchar
 3. Program prints both lower and uppercase using putchar
 4. Excluding q and e in in the loop of a-z
+5. Program prints 0-9 using for loop
 
