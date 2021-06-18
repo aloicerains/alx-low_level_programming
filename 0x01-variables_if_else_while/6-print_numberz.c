@@ -6,11 +6,11 @@
 #include <stdio.h>
 int main(void)
 {
-	char ch;
+	int ch = 0;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	for (ch = 0; ch <= 9; ch++)
 	{
-		putchar (ch);
+		putchar(ch%10 + '0');
 	}
 	putchar('\n');
 	return (0);
