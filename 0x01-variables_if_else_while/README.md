@@ -7,4 +7,5 @@
 5. Program prints 0-9 using for loop and printf
 6. Porgrams displays 0-9 using putchar function and for loop
 7. Printing letters using puts in reverse order
+8. Printing base 16 in lowercases using puts
 
