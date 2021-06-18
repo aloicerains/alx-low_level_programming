@@ -4,5 +4,6 @@
 2. Program prints lowercase alphabets using putchar
 3. Program prints both lower and uppercase using putchar
 4. Excluding q and e in in the loop of a-z
-5. Program prints 0-9 using for loop
+5. Program prints 0-9 using for loop and printf
+6. Porgrams displays 0-9 using putchar function and for loop
 
