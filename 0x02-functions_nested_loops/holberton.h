@@ -1,17 +1,10 @@
 /**
- * header files
- *to be included in main
- * -putchar - Enter texts
- *  return -int
+ * _putchar - Prints output
  *  @c - character input
  *
+ *  Description: function returns character values
+ *  return: integer
+ *
  *  schoolName - Print school name
- *  retun - void
  */
-#ifndef HOLBERTON
-#define HOLBERTON
-#include "_putchar.c"
-#include "0-holberton.c"
 int _putchar(char c);
-void schoolName(void);
-#endif

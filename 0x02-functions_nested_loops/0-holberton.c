@@ -2,7 +2,9 @@
  * schoolName -Entry point
  * return - void
  */
-void schoolName(void)
+
+#include "holberton.h"
+int main(void)
 {
 	char s[12] = "Holberton";
 	int i = 0;
@@ -13,4 +15,5 @@ void schoolName(void)
 		i++;
 	}
 	_putchar('\n');
+	return (0);
 }
