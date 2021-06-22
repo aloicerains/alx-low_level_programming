@@ -1,8 +1,9 @@
 /**
- * schoolName -Entry point
- * return - void
+ * main -Entry point
+ *
+ * Description: print the name of school
+ * Return: Always (0) success. non zero unsuccessful
  */
-
 #include "holberton.h"
 int main(void)
 {
