@@ -9,4 +9,5 @@ The directory contains tasks on functions and nested loop. Standard library is n
 6. Prints the absolute value of input
 7. Prints last digit of a value
 8. Prints table of results
+9. Adding two numbers
 
