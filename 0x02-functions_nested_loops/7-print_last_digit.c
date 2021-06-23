@@ -8,7 +8,7 @@
 #include "holberton.h"
 int print_last_digit(int c)
 {
-	int ret;
+	long int ret;
 	int mod;
 
 	if (c < 0)
