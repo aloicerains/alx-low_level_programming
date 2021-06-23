@@ -15,6 +15,10 @@ int print_last_digit(int c)
 	{
 		ret = (r * (-1));
 	}
+	else if (r == 0)
+	{
+		ret = (r);
+	}
 	else
 	{
 		ret = (r);
