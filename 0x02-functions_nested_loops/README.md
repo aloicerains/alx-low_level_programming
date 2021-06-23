@@ -4,4 +4,5 @@ The directory contains tasks on functions and nested loop. Standard library is n
 1. Print lower alphabets
 2. Prints lower alphabets x10
 3. Determines if argument is lowercase
+4. Determines if input is an alphabet both lower and uppercase
 
