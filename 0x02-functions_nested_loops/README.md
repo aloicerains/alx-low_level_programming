@@ -11,4 +11,5 @@ The directory contains tasks on functions and nested loop. Standard library is n
 8. Prints table of results
 9. Adding two numbers
 10. Print numbers upto 98
+11. Prints all minutes in a day
 
