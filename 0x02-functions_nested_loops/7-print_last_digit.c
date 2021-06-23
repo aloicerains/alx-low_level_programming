@@ -8,15 +8,16 @@
 #include "holberton.h"
 int print_last_digit(int c)
 {
-	int ret = c % 10;
+	int r = c % 10;
+	int ret;
 
-	if (ret < 0)
+	if (r < 0)
 	{
-		ret = ret * (-1);
+		ret = (r * (-1));
 	}
 	else
 	{
-		ret = c;
+		ret = (r);
 	}
 	return (ret);
 }
