@@ -14,17 +14,20 @@ int print_last_digit(int c)
 	if (c < 0)
 	{
 		ret = (-1) * c;
-	       mod = ret % 10;
+	       mod =  ret % 10;
+	       _putchar('0' + mod);
 	}
 	else if (c == 0)
 	{
 		ret = 0;
 		mod = 0;
+		_putchar('0' + mod);
 	}
 	else
 	{
 		ret = c;
 		mod = ret % 10;
+		_putchar('0' + mod);
 	}
 	return (mod);
 
