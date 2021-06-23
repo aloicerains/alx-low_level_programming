@@ -10,4 +10,5 @@ The directory contains tasks on functions and nested loop. Standard library is n
 7. Prints last digit of a value
 8. Prints table of results
 9. Adding two numbers
+10. Print numbers upto 98
 
