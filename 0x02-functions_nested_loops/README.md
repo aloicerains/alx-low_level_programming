@@ -8,4 +8,5 @@ The directory contains tasks on functions and nested loop. Standard library is n
 5. Prints the sign of a number input
 6. Prints the absolute value of input
 7. Prints last digit of a value
+8. Prints table of results
 
