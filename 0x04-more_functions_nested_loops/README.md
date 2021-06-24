@@ -7,4 +7,5 @@ More functions and Nested loops
 5. Function printing numbers 1-14 x10
 6. Function prints straight line on screen
 7. Function prints diagonal line on screen
+8. Function prints squares
 
