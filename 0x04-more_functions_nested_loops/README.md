@@ -6,4 +6,5 @@ More functions and Nested loops
 4. Furnction excludes 2 and 4 when printing 0-9
 5. Function printing numbers 1-14 x10
 6. Function prints straight line on screen
+7. Function prints diagonal line on screen
 
