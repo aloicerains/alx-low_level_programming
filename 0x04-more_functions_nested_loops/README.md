@@ -10,4 +10,5 @@ More functions and Nested loops
 8. Function prints squares
 9. Function prints Fizz instead of 3, Buzz instead of 5, and FizzBuzz for numbers divisible by both 3 and 5
 10. Function prints a triangle
+11. Function prints any integer
 
