@@ -5,4 +5,5 @@ Pointers, Arrays, and strings
 3. Prints a string in stdout
 4. Prints string in reverse
 5. Updates the reverse in the variable
+6. Prints and skips other characters 
 
