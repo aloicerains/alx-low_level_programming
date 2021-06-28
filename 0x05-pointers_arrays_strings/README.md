@@ -6,4 +6,5 @@ Pointers, Arrays, and strings
 4. Prints string in reverse
 5. Updates the reverse in the variable
 6. Prints and skips other characters 
-
+7. Print second half of string
+        
