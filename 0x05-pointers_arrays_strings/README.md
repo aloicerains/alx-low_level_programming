@@ -8,5 +8,5 @@ Pointers, Arrays, and strings
 6. Prints and skips other characters 
 7. Print second half of string
 8. Prints n elements of an array of integers, followed by a new line
-9. String copying function
+9. String copying functions
         
