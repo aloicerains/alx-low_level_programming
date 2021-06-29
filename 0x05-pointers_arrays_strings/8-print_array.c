@@ -8,10 +8,8 @@
  */
 #include "holberton.h"
 #include <stdio.h>
-#include "_putchar.c"
 void print_array(int *a, int n)
 {
-	void printing(int x);
 	int i;
 
 	for (i = 0; i < n; i++)
