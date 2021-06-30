@@ -5,4 +5,5 @@ The directory contains funtions on arrays strings and pointers.
 * 2-strncpy.c: Copies string string b to string a
 * 3-strcmp.c: Compares two strings and return -ve +ve or zero 
 * 4-rev_array.c: Reverses array elements
+* 5-string_toupper.c: Converts lowercases to uppercases
 
