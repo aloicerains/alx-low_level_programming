@@ -6,4 +6,5 @@ Various scripts are included for handling C programs
 3. The directory 0x03-debugging
 4. More functions nested loops directory
 5. Directory 0x05-pointers_arrays_strings
+6. Directory 0x06-pointers_rrays_strings contains functions of arrays, pointers, and string manipulations
 
