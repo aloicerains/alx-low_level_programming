@@ -4,4 +4,5 @@ The directory contains funtions on arrays strings and pointers.
 * 1-strncat.c: Prints concatenates with specified byte size n
 * 2-strncpy.c: Copies string string b to string a
 * 3-strcmp.c: Compares two strings and return -ve +ve or zero 
+* 4-rev_array.c: Reverses array elements
 
