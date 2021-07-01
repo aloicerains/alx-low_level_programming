@@ -38,7 +38,6 @@ char *cap_string(char *a)
 		}
 		if (a[i] == '\t')
 		{
-			a[i] = ' ';
 			flag = 1;
 		}
 	}
