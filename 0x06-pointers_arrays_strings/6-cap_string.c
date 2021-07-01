@@ -42,6 +42,8 @@ char *cap_string(char *a)
 		{
 			if (a[i] == k[j])
 			{
+				if (a[i] == '\t')
+					a[i] = ' ';
 				flag = 1;
 				break;
 			}
