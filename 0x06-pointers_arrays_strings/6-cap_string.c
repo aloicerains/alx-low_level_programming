@@ -32,12 +32,15 @@ char *cap_string(char *a)
 		{
 			flag = 1;
 		}
-		if (a[i] == ')' || a[i] == '{' || a[i] == '}')
+		if (a[i] == ')' || a[i] == '{' || a[i] == '}' || a[i] == '\n')
 		{
 			flag = 1;
 		}
-		if (a[i] == '\n' || a[i] == '\t')
+		if (a[i] == '\t')
+		{
+			a[i] = ' ';
 			flag = 1;
+		}
 	}
 	return (a);
 }
