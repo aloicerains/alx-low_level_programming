@@ -17,7 +17,7 @@ char *_strncpy(char *dest, char *src, int n)
 	j = 0;
 	while ((dest[j] = src[j]) != '\0')
 	{
-		size++;
+		size += sizeof(src[j]);
 		if (size >= n)
 			break;
 		j++;
