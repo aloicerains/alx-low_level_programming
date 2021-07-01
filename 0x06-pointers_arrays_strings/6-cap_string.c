@@ -1,23 +1,28 @@
 /**
- *cap_string - Function capitalizes beginning words of string
+ *cap_string - Function capitalizes first character after punctuation
  * @a: string being converted
  *
- * Description: Function returns the sentence cases
- * Return: void
+ * Description: Function capitalizes first character
+ * Return: character pointer
  */
 #include <stdio.h>
 #include "holberton.h"
 char *cap_string(char *a)
 {
 	int i;
+	int j;
 	int flag;
+	char k[] = {' ', '\t', '\n', ',', ';', '.', '!',
+		'?', '"', '(', ')', '{', '}', '\0'};
 
+	i = 0;
+	j = 0;
 	flag = 0;
 	for (i = 0; a[i] != '\0'; i++)
 	{
 		if (flag == 1)
 		{
-			if (a[i] >= 'a' && a[i] <= 'z')
+			if ((a[i] >= 'a' && a[i] <= 'z'))
 			{
 				a[i] = a[i] - 32;
 				flag = 0;
@@ -28,17 +33,18 @@ char *cap_string(char *a)
 				flag = 0;
 			}
 		}
-		if (a[i] == ' ' || a[i] == '.' || a[i] == '?' || a[i] == '!' || a[i] == '(')
+		else
+			{
+				a[i] = a[i];
+				flag = 0;
+			}
+		for (j = 0; j <= 13; j++)
 		{
-			flag = 1;
-		}
-		if (a[i] == ')' || a[i] == '{' || a[i] == '}' || a[i] == '\n')
-		{
-			flag = 1;
-		}
-		if (a[i] == '\t')
-		{
-			flag = 1;
+			if (a[i] == k[j])
+			{
+				flag = 1;
+				break;
+			}
 		}
 	}
 	return (a);
