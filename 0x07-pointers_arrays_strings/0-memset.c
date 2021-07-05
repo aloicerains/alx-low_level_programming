@@ -11,11 +11,11 @@
 #include "holberton.h"
 char *_memset(char *s, char b, unsigned int n)
 {
-	unsigned int i;
+	char *p = s;
 
-	for (i = 0; i < n && s[i] != '\0'; i++)
+	while (n--)
 	{
-		s[i] = b;
+		*p++ = b;
 	}
 	return (s);
 }
