@@ -7,4 +7,5 @@ The directory contains further projects on arrays and pointers. The following ar
 * 4-strpbrk.c: Function searches for a string for any of a set of bytes
 * 5-strstr.c: Function locates substring and return pointer
 * 7-print_chessboard.c: Prints a chessboard array
+* 8-print_diagsums.c: Prints the sums of both diagonals
 
