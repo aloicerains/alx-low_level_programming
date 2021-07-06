@@ -8,4 +8,5 @@ The directory contains further projects on arrays and pointers. The following ar
 * 5-strstr.c: Function locates substring and return pointer
 * 7-print_chessboard.c: Prints a chessboard array
 * 8-print_diagsums.c: Prints the sums of both diagonals
+* 100-set_string.c: Sets the value of the pointer to char
 
