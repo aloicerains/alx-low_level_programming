@@ -8,4 +8,5 @@ The directory contains recursive functios that performs the following tasks:
 * 5-sqrt_recursion.c: Gets squareroot of number
 * 6-is_prime_number.c: Determines if input is prime number
 * 100-is_palindrome.c: Determeines if the string is palindrome. 
+* 101-wildcmp.c: Compares two strings and return 1 if identical otherwise zero
 
