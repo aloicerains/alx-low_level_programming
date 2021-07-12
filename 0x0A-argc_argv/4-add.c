@@ -10,24 +10,41 @@
 #include <stdlib.h>
 int main(int argc, char *argv[])
 {
-	int result, i;
+	int errorTest(char []);
+	int result;
+	int i;
+	int flag;
 
 	result = 0;
 	for (i = 1; i < argc; i++)
 	{
-		if (*argv[i] != '0')
+		flag = errorTest(argv[i]);
+		if (flag == 0)
 		{
-			if (atoi(argv[i]) == 0)
-			{
-				printf("Error\n");
-				return (1);
-			}
+			printf("Error\n");
+			return (1);
 		}
-		if (atoi(argv[i]) < 0)
-			result += (-1) * atoi(argv[i]);
-		else
-			result += atoi(argv[i]);
+		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
 	return (0);
+}
+/**
+ * errorTest - function checks if characters are in the argument
+ * @s: string argument
+ *
+ * Return: flag 1 success, 0 fail
+ */
+int errorTest(char s[])
+{
+	int flag;
+	int i;
+
+	flag = 1;
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (!(s[i] >= '0' && s[i] <= '9'))
+			flag = 0;
+	}
+	return (flag);
 }
