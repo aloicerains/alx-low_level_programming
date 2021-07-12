@@ -23,6 +23,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
+		if (atoi(argv[i]) < 0)
+			continue;
 		result += atoi(argv[i]);
 	}
 	printf("%d\n", result);
