@@ -1,4 +1,4 @@
-###Low level Programming
+### Low level Programming
 This is my introduction to low level programming in C
 Various scripts are included for handling C programs
 1. Directory 0x01-variables_if_else_while contains programs for loops
@@ -11,4 +11,5 @@ Various scripts are included for handling C programs
 8. Directory 0x08-recursions contains recursive projects
 9. Direcotry 0x09-static_libraries contains a static library
 10. Directorry 0x0A-argc_argv contains projects entailing arguments to main function
+11. 0x0B-malloc_free: Contains projects on memory allocation malloc and free functions
 
