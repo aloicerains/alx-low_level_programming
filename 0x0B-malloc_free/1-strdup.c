@@ -4,25 +4,21 @@
  *
  * Return: pointer to string duplicate
  */
-#include <stdio.h>
+#include <string.h>
 #include "holberton.h"
 #include <stdlib.h>
 char *_strdup(char *str)
 {
 	char *array;
-	char *ptr;
-	int length;
+	unsigned int length;
 
-	length = 0;
-	while (str[length])
-		length++;
-	array = malloc(length + 1);
-	ptr = array;
-	while (*str)
-		*ptr++ = *str++;
-	*ptr = '\0';
+	if (str == NULL)
+		return (NULL);
+	length = strlen(str) + 1;
+	array = malloc(length);
 	if (array)
 	{
+		memcpy(array, str, length);
 		return (array);
 	}
 	else
