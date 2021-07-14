@@ -5,4 +5,5 @@ The direcotry contains the following programs:
 * 2-str_concat.c: Concatenates two strings
 * 3-alloc_grid.c: allocates grid
 * 4-free_grid.c: frees grid created in 3 above
+* 101-strtow.c: splits string into words
 
