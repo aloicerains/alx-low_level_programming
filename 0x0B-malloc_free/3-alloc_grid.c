@@ -9,23 +9,24 @@
 #include <stdio.h>
 int **alloc_grid(int width, int height)
 {
-	int **array;
+	int **array = NULL;
+	int *arr = NULL;
 	int i, j;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	array = malloc(sizeof(**array) * height);
-	for (i = 0; i < height; i++)
-		array[i] = malloc(sizeof(*array) * width);
-	if (array)
-	{
-		for (i = 0; i < height; i++)
+	array = malloc((sizeof(int*) * height) + (sizeof(int) * height * width));
+	arr = (int*)(array + height);
+	i = 0;
+	j = 0;
+	if (array != NULL)
+		for(; i < height; i++)
+		{
+			array[i] = arr + (i*width);
 			for (j = 0; j < width; j++)
 				array[i][j] = 0;
-		return (array);
-	}
+		}
 	else
-		return (NULL);
-	free(array);
-
+		return (free(array),NULL);
+	return (array);
 }
