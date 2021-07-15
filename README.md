@@ -12,4 +12,5 @@ Various scripts are included for handling C programs
 9. Direcotry 0x09-static_libraries contains a static library
 10. Directorry 0x0A-argc_argv contains projects entailing arguments to main function
 11. 0x0B-malloc_free: Contains projects on memory allocation malloc and free functions
+12. 0x0C-more_malloc_free: More projects on the malloc realloc and free
 
