@@ -3,7 +3,7 @@
  * @s1 : destination string
  * @s2 : source string
  * @n : number of bytes of string 2
- * 
+ *
  * Return: pointer to new concatenated string
  */
 #include <stdlib.h>
@@ -11,19 +11,34 @@
 #include <stdio.h>
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *string, *ptr;
-	int len, i;
+	char *string = NULL;
+	char *ptr = NULL;
+	unsigned int len1, len2, len;
 
-	len = strlen(s1) + n + 1;
-	string = malloc(sizeof(*string * len));
+	if (s1 == NULL)
+		s1 = "";
+	if (!s2)
+		s2 = "";
+	for (len1 = 0; s1[len1]; len1++)
+		;
+	for (len2 = 0; s2[len2]; len2++)
+		;
+	if (len2 > n)
+		len2 = n;
+	len = len1 + len2 + 1;
+	string = malloc(sizeof(*string) * len);
 	ptr = string;
 	if (string == NULL)
 		return (NULL);
-	else
+	while (*s1)
 	{
-		for (i = 0; s1[i]; i++)
-			string[i] = s1[i];
-		strncat(string, s2, n);
-		return (ptr);
+		*string++ = *s1++;
 	}
+	while (n-- && *s2 != '\0')
+	{
+		*string++ = *s2++;
+	}
+	*string = '\0';
+	return (ptr);
 }
+
