@@ -14,4 +14,5 @@ Various scripts are included for handling C programs
 11. 0x0B-malloc_free: Contains projects on memory allocation malloc and free functions
 12. 0x0C-more_malloc_free: More projects on the malloc realloc and free
 12. 0x0D-preprocessor: Contains projects on C preprocessor and macros
+13. 0x0E-structures_typedef: Contains programs on structures and typedef
 
