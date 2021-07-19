@@ -8,8 +8,6 @@
 #include <stdio.h>
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
-		printf("\n");
 	if (d->name == NULL)
 		printf("Name: (nil)\n");
 	else
