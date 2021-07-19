@@ -4,4 +4,5 @@ The directory contains programs on usage of structures and typdef
 * 1-init_dog.c: Initializes the variable of type struct dog
 * 2-print_dog.c: Function prints elements of dog
 * dog.h: Redefines the name of the struct dog
+* 4-new_dog.c: Function creates a new dog
 
