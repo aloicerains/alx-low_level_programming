@@ -4,4 +4,5 @@ The direcotory contains programs the following programs:
 * 1-pi.h: defines the value of PI
 * 2-main.c: Prints the name from which the program was compiled
 * 3-function_ike_macro.h: Gets absolute value of an integer
+* 4-sum.h: Function computes sum of two numbers x and y
 
