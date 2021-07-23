@@ -4,4 +4,5 @@ The following programs are contained:
 * 0-sum_them_all.c: Functions that returns sum of all it's parameters
 * 1-print_numbers.c: prints out the number arguments
 * 2-print_strings.c: Prints string argument in the output
+* 3-print_all.c: Function prints differnt types of arguments
 
