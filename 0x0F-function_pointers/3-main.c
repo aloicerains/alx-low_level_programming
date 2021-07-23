@@ -14,26 +14,26 @@ int main(int argc, char *argv[])
 	char *op;
 	int (*fu)(int, int);
 
-	op = argv[2];
-	n1 = atoi(argv[1]);
-	n2 = atoi(argv[3]);
-	if (argc < 4 || argc > 4)
+	if (argc != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if (get_op_func(op) == NULL)
+	op = argv[2];
+	n1 = atoi(argv[1]);
+	n2 = atoi(argv[3]);
+	fu = get_op_func(op);
+	if (fu == NULL)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	fu = get_op_func(op);
-	answer = fu(n1, n2);
-	if ((*op == '/' && n2 == 0) || (*op == '%' && n2 == 0))
+	if ((fu == op_div || fu == op_mod)  && n2 == 0)
 	{
 		printf("Error\n");
 		exit(100);
 	}
+	answer = fu(n1, n2);
 	printf("%d\n", answer);
 	return (0);
 }
