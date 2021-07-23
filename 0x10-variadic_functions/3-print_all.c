@@ -12,27 +12,32 @@
 void print_all(const char * const format, ...)
 {
 	va_list ap;
-	int i, k, len;
+	int i, k, p;
 	char array[] = {'i', 'c', 'f', 's'};
 	void (*f[])(va_list) = {print_i, print_c, print_f, print_s};
 
 	k = 0;
-	len = strlen(format);
+	p = 0;
 	va_start(ap, format);
-	while (format[k] != '\0')
+	while (format != NULL && format[k] != '\0')
 	{
 		i = 0;
+		p = 0;
 		while (i < 4)
 		{
 			if (format[k] == array[i])
 			{
 				(f[i])(ap);
-				if (k != len - 1)
+				p = 1;
+				if (format[k + 1] != '\0')
 					printf(", ");
+				break;
 			}
 			i++;
 		}
 		k++;
+		if (p == 0 && format[k] == '\0')
+			printf("\b\b");
 	}
 	va_end(ap);
 	printf("\n");
@@ -45,10 +50,7 @@ void print_all(const char * const format, ...)
  */
 void print_i(va_list ap)
 {
-	int i;
-
-	i = va_arg(ap, int);
-	printf("%d", i);
+	printf("%d", va_arg(ap, int));
 }
 /**
  * print_c - function prints characters
@@ -58,10 +60,7 @@ void print_i(va_list ap)
  */
 void print_c(va_list ap)
 {
-	char i;
-
-	i = va_arg(ap, int);
-	printf("%c", i);
+	printf("%c", (char)va_arg(ap, int));
 }
 /**
  * print_f - function prints double values
@@ -71,10 +70,7 @@ void print_c(va_list ap)
  */
 void print_f(va_list ap)
 {
-	double i;
-
-	i = va_arg(ap, double);
-	printf("%f", i);
+	printf("%f", (double)va_arg(ap, double));
 }
 /**
  * print_s - function prints string
