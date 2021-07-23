@@ -80,6 +80,7 @@ void print_s(va_list ap)
 	char *s;
 
 	s = va_arg(ap, char*);
-	s = (char *)((s == NULL) * (unsigned long)"(nil)" + (s != NULL) * (unsigned long) s);
+	s = (char *)((s == NULL) *\
+			(unsigned long)"(nil)" + (s != NULL) * (unsigned long) s);
 		printf("%s", s);
 }
