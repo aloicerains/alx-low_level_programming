@@ -22,22 +22,19 @@ void print_all(const char * const format, ...)
 	while (format != NULL && format[k] != '\0')
 	{
 		i = 0;
-		p = 0;
 		while (i < 4)
 		{
 			if (format[k] == array[i])
 			{
+				if (p != 0)
+					printf(", ");
 				(f[i])(ap);
 				p = 1;
-				if (format[k + 1] != '\0')
-					printf(", ");
 				break;
 			}
 			i++;
 		}
 		k++;
-		if (p == 0 && format[k] == '\0')
-			printf("\b\b");
 	}
 	va_end(ap);
 	printf("\n");
