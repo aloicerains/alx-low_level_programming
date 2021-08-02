@@ -9,4 +9,5 @@ The following programs are in this directory:
 * 6-pop_listint.c: Program deletes the head node given as an argument
 * 7-get_nodeint.c: Program returns the node at a given index
 * 8-sum_listint.c: Program returns the summation of node elements
+* 9-insert_nodeint.c: Program inserts node at a given index location
 
