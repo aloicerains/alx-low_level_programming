@@ -1,6 +1,6 @@
 ### Low level Programming
 This is my introduction to low level programming in C
-Various scripts are included for handling C programs
+Various scripts and programs are included for handling C programs
 1. Directory 0x01-variables_if_else_while contains programs for loops
 2. The directory 0x02-functions_nested_loops contains programs relating to functions and loops
 3. The directory 0x03-debugging
@@ -18,3 +18,4 @@ Various scripts are included for handling C programs
 14. 0x0F-function_pointers: Contains projects on Function Pointers
 15. 0x10_variadic_functions: Contains projects on Variadic Functions 
 16. Directory 0x12-singley_linked_lists
+17. Directory 0x13-more_singly_linked_lists
