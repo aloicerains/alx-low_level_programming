@@ -8,4 +8,5 @@ The following programs are in this directory:
 * 5-free_listint2.c: Program frees list given a **ptr head argument
 * 6-pop_listint.c: Program deletes the head node given as an argument
 * 7-get_nodeint.c: Program returns the node at a given index
+* 8-sum_listint.c: Program returns the summation of node elements
 
