@@ -7,4 +7,5 @@ The following programs are in this directory:
 * 4-free_listint.c: Program frees list created before
 * 5-free_listint2.c: Program frees list given a **ptr head argument
 * 6-pop_listint.c: Program deletes the head node given as an argument
+* 7-get_nodeint.c: Program returns the node at a given index
 
