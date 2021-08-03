@@ -11,4 +11,5 @@ The following programs are in this directory:
 * 8-sum_listint.c: Program returns the summation of node elements
 * 9-insert_nodeint.c: Program inserts node at a given index location
 * 10-delete_nodeint.c: Program deletes nodes at given index location
+* 100-reverse_listint.c: Program reverses an array of integers
 
