@@ -13,27 +13,34 @@
 #include "lists.h"
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *tmp = (*head);
-	listint_t *tmp1 = (*head);
-	unsigned int len = listint_len(tmp);
-	unsigned int count = 1;
+	listint_t *tmp = NULL;
+	listint_t *tmp1 = NULL;
+	unsigned int len;
+	unsigned int count;
 	listint_t *newNode = malloc(sizeof(listint_t));
 
-	while (tmp1 != NULL && newNode != NULL)
+	if (head != NULL)
 	{
-		if (idx == 0)
-			return (add_nodeint(head, n));
-		if (idx == len)
-			return (add_nodeint_end(head, n));
-		if (idx == count)
+		tmp = (*head);
+		tmp1 = (*head);
+		len = listint_len(tmp);
+		count = 1;
+		while (tmp1 != NULL && newNode != NULL)
 		{
-			newNode->n = n;
-			newNode->next = tmp1->next;
-			tmp1->next = newNode;
-			return (newNode);
-		}
+			if (idx == 0)
+				return (add_nodeint(head, n));
+			if (idx == len)
+				return (add_nodeint_end(head, n));
+			if (idx == count)
+			{
+				newNode->n = n;
+				newNode->next = tmp1->next;
+				tmp1->next = newNode;
+				return (newNode);
+			}
 		count++;
 		tmp1 = tmp1->next;
+		}
 	}
 	return (NULL);
 }
