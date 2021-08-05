@@ -4,4 +4,5 @@ The directory contains programs associated with bit manipulations and conversion
 * 1-print_binary.c: Prints binary conversion of unsigned ling integers
 * 2-get_bit.c: Function gets the bit a given index
 * 3-set_bit.c: Program sets the bit a given index
+* 4-clear_bit.c: Program sets the bit a given index to 0
 
