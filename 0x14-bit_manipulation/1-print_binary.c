@@ -8,20 +8,30 @@
 #include "main.h"
 void print_binary(unsigned long int n)
 {
-	char bin[32];
-	int i = 0;
-	int j;
+	void print(unsigned long int k);
 
 	if (n == 0)
 	{
 		_putchar('0');
 	}
-	while (n > 0)
+	if (n > 0)
+		print(n);
+}
+/**
+ * print - function prints the binary
+ * @k: decimal argument
+ *
+ * Return: nothing
+ */
+void print(unsigned long int k)
+{
+	char b;
+
+	if (k > 0)
 	{
-		bin[i] = ((n & 1) == 0 ? '0' : '1');
-		n >>= 1;
-		i++;
+		b = ((k & 1) == 0 ? '0' : '1');
+		k >>= 1;
+		print(k);
+		_putchar(b);
 	}
-	for (j = i - 1; j >= 0; j--)
-		_putchar(bin[j]);
 }
