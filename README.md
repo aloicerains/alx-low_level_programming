@@ -19,3 +19,5 @@ Various scripts and programs are included for handling C programs
 15. 0x10_variadic_functions: Contains projects on Variadic Functions 
 16. Directory 0x12-singley_linked_lists
 17. Directory 0x13-more_singly_linked_lists
+18. Directory 0x14-bit_manipulation
+
