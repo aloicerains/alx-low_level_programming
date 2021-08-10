@@ -13,22 +13,24 @@
 #include "main.h"
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t num;
-	int fd, c;
+	ssize_t num, c;
+	int fd;
 	char *buf = NULL;
 
 	if (filename != NULL)
 	{
 		fd = open(filename, O_RDWR);
-		buf = malloc(sizeof(buf) * letters);
-		if (buf == NULL || fd == -1)
+		buf = malloc(sizeof(size_t) * letters);
+		if (buf == NULL)
 			return (free(buf), 0);
+		if (fd == -1)
+			return (0);
 		c = read(fd, buf, letters);
 		if (c == -1)
 			return (0);
 		close(fd);
 
-		num = write(STDOUT_FILENO, buf, letters);
+		num = write(STDOUT_FILENO, buf, c);
 		if (num != -1)
 		{
 			return (num);
