@@ -5,6 +5,9 @@
  *
  * Return: address of the new element or null if it failed
  */
+#include <stdio.h>
+#include <stddef.h>
+#include <stdlib.h>
 #include "lists.h"
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
