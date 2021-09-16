@@ -3,5 +3,6 @@ The directory contains the files and programs on doubly linked lists. The follow
 * 0-print_dlistint.c: The function prints all the elements of  a dlistin_t list
 * 1-dlistint_len.c: Function  returns the number of elements in a Doubly linked list (DLL)
 * 2-add_dnodeint.c: Function adds a new node at the beginning of a dlistint_t list
+* 3-add_dnodeint_end.c: Function adds new node at the end of the dlistint_t
 
 
