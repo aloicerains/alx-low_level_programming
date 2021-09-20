@@ -22,6 +22,7 @@ Various scripts and programs are included for handling C programs
 18. Directory 0x14-bit_manipulation
 19. Directory 0x15-file_io-contains programs on file descriptors
 20. Directory 0x17-doubly_linked_lists:Contains files and programs on doubly linked lists
+21. Directory 0x18-dynamic_libraries: Dynamic libraries in c
 
 
 
