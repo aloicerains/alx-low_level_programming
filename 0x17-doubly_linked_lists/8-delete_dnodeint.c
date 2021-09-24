@@ -28,7 +28,7 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		if (count == 0)
 		{
 			tempx = temp;
-			temp = temp->next;
+			(*head) = temp->next;
 			if (temp->next != NULL)
 				temp->next->prev = NULL;
 			free(tempx);
@@ -36,20 +36,37 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 		}
 		if (count == len - 1)
 		{
-			tempx = temp;
-			temp = temp->prev;
-			if (temp->prev != NULL)
-				temp->prev->next = NULL;
-			free(tempx);
 			return (1);
 		}
 		if (count == index)
 		{
-			temp->next->prev = temp->prev;
-			temp->prev->next = temp->next;
-			free(temp);
+			delete_atmiddle(temp);
 			return (1);
 		}
 	}
 	return (-1);
+}
+/**
+ * delete_atend - function deletes node at the end
+ * @head: pointer to the node to delete
+ */
+void delete_atend(dlistint_t *head)
+{
+	dlistint_t *tmp = head;
+
+	if (head->prev)
+		head->prev->next = NULL;
+	free(tmp);
+}
+/**
+ * delete_atmiddle - function deletes node in the middle
+ * @head: pointer to the middle node
+ */
+void delete_atmiddle(dlistint_t *head)
+{
+	dlistint_t *tmp = head;
+
+	head->next->prev = head->prev;
+	head->prev->next = head->next;
+	free(tmp);
 }
