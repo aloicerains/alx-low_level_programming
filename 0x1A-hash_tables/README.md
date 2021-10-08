@@ -19,4 +19,9 @@ Function adds an element to the hash table.
 Key cannot b an empty string.     
 Value associated with key and must be duplicated. It can be empty string     
 Returns 1 on success and 0 on failure    
+
+- [ ] **4-hash_table_get.c**     
+Function retrieves a value associated with a key.    
+Returns the value associated with the element or NULL if the key could not be found.    
+
  
