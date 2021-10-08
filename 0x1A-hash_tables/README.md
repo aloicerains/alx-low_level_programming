@@ -28,4 +28,8 @@ Returns the value associated with the element or NULL if the key could not be fo
 Function prints a hash table.    
 The key/value is printed in the order they appear in the hash table.    
 If the hash table is NUll, don't print anything.       
+
+-[ ] **6-hash_table_delete.c**    
+Deletes the hash table   
+
  
