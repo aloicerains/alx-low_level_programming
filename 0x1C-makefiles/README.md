@@ -13,5 +13,5 @@ The directory contain tasks on makefiles and using make function. Some of the co
 #### Tasks   
 The following tasks are included in this directory.   
 
-* [ ] 0. make -f 0-Makefile: Creatin the first Makefile with the executable `school` name.   
-
+* [ ] 0. make -f 0-Makefile: Creating the first Makefile with the executable `school` name.    
+* [ ] 1. make -f 1-Makefile: Using variables CC and SRC to create executable file `school` 
